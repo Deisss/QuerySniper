@@ -1,0 +1,31 @@
+
+<div style="display:{{separator}}" class="separator"><img src="resources/img/arrow.png"/></div>
+<fieldset data-step-id="{{id}}" class="table">
+  <legend>Step<a class="remove"><i class="icon-remove place-right"></i></a></legend>
+  <label class="input-control radio">Quick SELECT
+    <input type="radio" name="type-{{id}}" checked="checked" value="quick" class="quick"/><span class="check"></span>
+  </label>
+  <div class="input-control place-right">
+    <button class="popup-auto info">Help</button>
+  </div>
+  <div>
+    <label>table</label>
+    <div class="input-control select">
+      <select name="tables[]" class="quick-table"></select>
+    </div>
+  </div>
+  <div>
+    <div class="input-control text">
+      <input type="text" name="queries[]" placeholder="ex: user.id = license.user_id" class="quick-query"/>
+      <button class="btn-clear erase"></button>
+    </div>
+  </div>
+  <label class="input-control radio">Custom SELECT
+    <input type="radio" name="type-{{id}}" value="custom" class="custom"/><span class="check"></span>
+  </label>
+  <div>
+    <div class="input-control textarea">
+      <textarea name="customs[]" disabled="disabled" class="custom-query"></textarea>
+    </div>
+  </div>
+</fieldset>

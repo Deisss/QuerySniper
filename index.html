@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Query Sniper</title>
+    <link rel="stylesheet" href="bower_components/Metro-UI-CSS/min/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/smoke.js/smoke.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/render.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+  </head>
+  <body class="metro">
+    <nav class="navigation-bar">
+      <nav class="navigation-bar-content">
+        <item class="element"><a href="#/visual/clean" class="clean">Home</a></item>
+        <item class="element"><a href="#/visual/create" class="create">Create visual</a></item>
+        <!--item.element-divider-->
+        <!--item.element.render-options.hidden-->
+        <!--    a.reuse='Modify visual'-->
+        <item class="element-divider render-options"></item>
+        <item class="element place-right render-options hidden"><a class="dropdown-toggle"><span class="icon-cog"></span></a>
+          <ul data-role="dropdown" class="dropdown-menu place-right">
+            <li><a class="export-options">Export visual</a></li>
+            <li><a class="data-options">Export SQL data</a></li>
+            <li><a class="screenshot-options">Export screenshot</a></li>
+            <li><a class="import-options">Import visual</a></li>
+          </ul>
+        </item>
+      </nav>
+    </nav>
+    <!-- Main page content-->
+    <div id="page-container"></div>
+    <!-- Waiting message while AppStorm.JS is loading something-->
+    <div id="page-loading" class="alert alert-warning"><img src="resources/img/loading-appstorm.gif" alt=""> 
+      Loading...
+    </div>
+    <div data-template-id="visual-create-auto" class="template hidden"><small>This page helps you by restricting to &quot;possible tables&quot; and automate query search</small>
+      <label>Recommanded table</label>
+      <div class="input-control select">
+        <select class="auto-table"></select>
+      </div>
+      <p class="internal hidden"></p>
+      <div class="append"></div>
+      <div class="align-right">
+        <button class="info valid">OK</button>
+      </div>
+    </div>
+    <div data-template-id="visual-render" class="template hidden">
+      <div class="input-control textarea">
+        <textarea></textarea>
+      </div>
+      <div class="align-right">
+        <button class="valid info">OK</button>
+      </div>
+    </div>
+    <!-- Scripts-->
+    <script src="bower_components/appstorm/appstorm.min.js" id="a-core"></script>
+    <!--script(src='appstorm.min.js', id='a-core')-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="bower_components/smoke.js/smoke.min.js"></script>
+    <script src="bower_components/Metro-UI-CSS/min/metro.min.js"></script>
+    <script src="bower_components/lodash/lodash.min.js"></script>
+    <!-- SVG/Image-->
+    <script src="bower_components/html2canvas/build/html2canvas.min.js"></script>
+    <script src="bower_components/canvg/dist/canvg.min.js"></script>
+    <!-- Graphics-->
+    <script src="bower_components/jsPlumb/dist/js/jquery.jsPlumb-1.7.4-min.js"></script>
+    <!-- Appstorm-->
+    <script src="resources/js/state-home.js"></script>
+    <script src="resources/js/state-visual.js"></script>
+    <script src="resources/js/state-render.js"></script>
+    <script src="resources/js/starter.js"></script>
+  </body>
+</html>

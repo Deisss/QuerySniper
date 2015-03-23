@@ -1,0 +1,38 @@
+{
+  "name": "Query Snipper",
+  "version": "0.0.1",
+  "authors": [
+    "Deisss"
+  ],
+  "description": "Database visual query tool",
+  "main": "index.php",
+  "keywords": [
+    "database",
+    "sql",
+    "mysql",
+    "query",
+    "visual"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "~1.11.4",
+    "lodash": "~3.5.0",
+    "Metro-UI-CSS": "~2.0.23",
+    "jquery": "~2.1.3",
+    "appstorm": "~0.2.5",
+    "smoke.js": "*",
+    "jsPlumb": "~1.7.4",
+    "jqueryui-touch-punch": "*",
+    "html2canvas": "~0.4.1",
+    "canvg": "~1.3.0"
+  }
+}

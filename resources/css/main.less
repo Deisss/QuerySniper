@@ -1,0 +1,186 @@
+// Overriding some smoke.css
+.smoke-base {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 6000 !important;
+}
+.smoke-base .dialog {
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+}
+.smoke-base .dialog-buttons button {
+    font-family: inherit !important;
+    background-color: #2d89ef;
+}
+.smoke-base .dialog-prompt input {
+    font-family: inherit !important;
+}
+.smoke-base button.cancel {
+    background-color: transparent;
+    color: #2e92cf !important;
+}
+.smoke {
+    font-family: inherit !important;
+}
+
+
+// metro ui css
+.metro.window-overlay {
+    z-index: 5000;
+}
+.window-overlay .template {
+    padding: 10px;
+    min-width: 450px;
+
+    .textarea {
+        min-height: 130px;
+
+        textarea {
+            min-height: 130px;
+        }
+    }
+}
+
+
+// Helper
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+// Page loading element
+#page-loading {
+    display: none;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    margin-bottom: 0px;
+    padding: 5px 15px;
+    z-index: 100;
+    border: 1px solid #faebcc;
+}
+
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+    border-radius: 4px;
+}
+
+// Navbar
+.navigation-bar a {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    &.black {
+        color: black !important;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+#page-container {
+    // 45px: the navbar height
+    height: -moz-calc(~"100% - 45px");
+    height: -webkit-calc(~"100% - 45px");
+    height: calc(~"100% - 45px");
+}
+
+div.create, div.home {
+    height: 100%;
+}
+
+div.graphic {
+    min-height: 100%;
+}
+
+div.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a.button {
+        margin-top: 40px;
+    }
+}
+
+div.create, div.reuse {
+    display: flex;
+    box-orient: horizontal;
+
+    align-items: center;
+    justify-content: left;
+
+    max-width: 100%;
+    overflow: auto;
+
+    div {
+        box-flex: 1;
+    }
+
+    div.add {
+        margin-left: 20px;
+
+        a {
+            cursor: pointer;
+        }
+    }
+
+    // Content is himself a flex box
+    div.content {
+        display: flex;
+        box-orient: horizontal;
+        justify-content: left;
+
+        div {
+            box-flex: 1;
+        }
+    }
+
+    div.valid {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+div.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset.table {
+    padding: 0 15px;
+    min-width: 200px;
+
+    legend i {
+        font-size: 16px !important;
+        padding-top: 14px;
+        cursor: pointer;
+    }
+
+    button.popup-auto {
+        margin-top: 3px;
+    }
+}

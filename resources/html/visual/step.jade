@@ -1,0 +1,31 @@
+div.separator(style='display:{{separator}}')
+    img(src='resources/img/arrow.png')
+
+fieldset.table(data-step-id='{{id}}')
+    legend='Step'
+        a.remove
+            i.icon-remove.place-right
+
+    label.input-control.radio
+        | Quick SELECT
+        input.quick(type='radio', name='type-{{id}}', checked=true, value='quick')
+        span.check
+    div.input-control.place-right
+        button.popup-auto.info='Help'
+    div
+        label='table'
+        div.input-control.select
+            select.quick-table(name='tables[]')
+    div
+        div.input-control.text
+            input.quick-query(type='text', name='queries[]', placeholder='ex: user.id = license.user_id')
+            button.btn-clear.erase
+
+
+    label.input-control.radio
+        | Custom SELECT
+        input.custom(type='radio', name='type-{{id}}' value='custom')
+        span.check
+    div
+        div.input-control.textarea
+            textarea.custom-query(name='customs[]', disabled=true)

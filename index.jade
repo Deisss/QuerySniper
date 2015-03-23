@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+    head
+        title='Query Sniper'
+        link(rel='stylesheet', href='bower_components/Metro-UI-CSS/min/metro-bootstrap.min.css')
+        link(rel='stylesheet', href='bower_components/smoke.js/smoke.css')
+        link(rel='stylesheet', href='resources/css/main.css')
+        link(rel='stylesheet', href='resources/css/render.css')
+        link(rel='shortcut icon', type='image/png', href='favicon.png')
+    body.metro
+        nav.navigation-bar
+            nav.navigation-bar-content
+                item.element
+                    a.clean(href='#/visual/clean')='Home'
+                item.element
+                    a.create(href='#/visual/create')='Create visual'
+                //item.element-divider
+                //item.element.render-options.hidden
+                //    a.reuse='Modify visual'
+                item.element-divider.render-options
+
+                item.element.place-right.render-options.hidden
+                    a.dropdown-toggle
+                        span.icon-cog
+                    ul.dropdown-menu.place-right(data-role='dropdown')
+                        li
+                            a.export-options='Export visual'
+                        li
+                            a.data-options='Export SQL data'
+                        li
+                            a.screenshot-options='Export screenshot'
+                        li
+                            a.import-options='Import visual'
+
+
+
+        // Main page content
+        #page-container
+
+
+        // Waiting message while AppStorm.JS is loading something
+        #page-loading.alert.alert-warning
+            img(src='resources/img/loading-appstorm.gif', alt='')
+            | 
+            | Loading...
+
+        div.template.hidden(data-template-id='visual-create-auto')
+            small='This page helps you by restricting to "possible tables" and automate query search'
+            label='Recommanded table'
+            div.input-control.select
+                select.auto-table
+            p.internal.hidden
+            div.append
+            div.align-right
+                button.info.valid='OK'
+
+        div.template.hidden(data-template-id='visual-render')
+            div.input-control.textarea
+                textarea
+            div.align-right
+                button.valid.info='OK'
+
+
+        // Scripts
+        script(src='bower_components/appstorm/appstorm.min.js', id='a-core')
+        //script(src='appstorm.min.js', id='a-core')
+        script(src='bower_components/jquery/dist/jquery.min.js')
+        script(src='bower_components/jquery-ui/jquery-ui.min.js')
+        script(src='bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.min.js')
+        script(src='bower_components/smoke.js/smoke.min.js')
+        script(src='bower_components/Metro-UI-CSS/min/metro.min.js')
+        script(src='bower_components/lodash/lodash.min.js')
+
+        // SVG/Image
+        script(src='bower_components/html2canvas/build/html2canvas.min.js')
+        script(src='bower_components/canvg/dist/canvg.min.js')
+
+        // Graphics
+        script(src='bower_components/jsPlumb/dist/js/jquery.jsPlumb-1.7.4-min.js')
+
+        // Appstorm
+        script(src='resources/js/state-home.js')
+        script(src='resources/js/state-visual.js')
+        script(src='resources/js/state-render.js')
+        script(src='resources/js/starter.js')
