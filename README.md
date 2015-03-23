@@ -59,4 +59,4 @@ There is few limits to this system by now:
 
 ## License
 
-QuerySniper is licensed under GPLv3 license. Please see LICENSE file for more details.
+QuerySniper is licensed under GPLv3 license. Please see [LICENSE](./LICENSE) file for more details.
