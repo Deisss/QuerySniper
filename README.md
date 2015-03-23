@@ -14,7 +14,7 @@ Here is some screen capture of database structure, a query and associated result
 ![The results](http://www.kirikoo.net/images/14Anonyme-20150323-181554.png)
 
 
-You can find an in depth tutorial [here](https://github.com/Deisss/QuerySniper/wiki/base)
+You can find an in depth tutorial [here](https://github.com/Deisss/QuerySniper/wiki/base).
 
 ## history
 
