@@ -14,6 +14,8 @@ Here is some screen capture of database structure, a query and associated result
 ![The results](http://www.kirikoo.net/images/14Anonyme-20150323-181554.png)
 
 
+You can find an in depth tutorial [here](https://github.com/Deisss/QuerySniper/wiki/base)
+
 ## history
 
 It all begins with a small program: it is a desktop application, installing on various environment (Linux, Windows...), and, in background, doing many things with a MySQL database across internet.  
@@ -21,7 +23,7 @@ The problem was: how to handle tech support in a various environment -with proba
 The idea quickly became POC, I need a tool able to 'trace queries and datas' across multiple tables to have a good overview of what's going on for a specific user, a specific requirement.  
 Short story simple: to know what are the current state of the database regarding this user/plugin.  
 
-Query Sniper was born!
+Query Sniper [was born](https://github.com/Deisss/QuerySniper/wiki/Idea)!
 
 ## Server Configuration
 
