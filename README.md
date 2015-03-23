@@ -36,7 +36,7 @@ By default the full configuration is available into config.php, to avoid htacces
 
 ## Client configuration
 
-Next, you need to add everything needed for client to work:
+Next, you need to add everything needed for client to work, for this, we use [bower](http://bower.io/):
 
 ```sh
 bower install
