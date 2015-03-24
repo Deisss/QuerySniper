@@ -58,6 +58,7 @@ There is few limits to this system by now:
   * Modify a visual, and beeing able to have parameters inside.
   * Adding more SQL Engine, like PostGreSQL, SQLite, ...
   * Being able to cascading delete when modifying a single line. For now the system crash with "constraint error", without giving option to the user to cascade delete.
+  * Being able to go deeper in the foreign keys search, in case of "really crappy" database. Like a table "users" and somewhere "user_id", the system is able to understand there is a link here.
 
 ## License
 
